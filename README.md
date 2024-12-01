@@ -29,9 +29,9 @@ O **Sistema de Gerenciamento de Segurança** é uma aplicação desenvolvida par
 ### Autenticação e Autorização:
 - **Registro de usuários** e **login** com geração de token JWT.
 - Tipos de usuários com diferentes níveis de acesso:
-  - **employee**: Acesso apenas aos recursos de equipamentos.
-  - **manager**: Acesso aos recursos de equipamentos e veículos.
-  - **admin**: Acesso completo aos recursos de equipamentos, veículos e dispositivos de segurança.
+  - **Funcionario**: Acesso apenas aos recursos de equipamentos.
+  - **Gerente**: Acesso aos recursos de equipamentos e veículos.
+  - **Administrador**: Acesso completo aos recursos de equipamentos, veículos e dispositivos de segurança.
 
 ### Gestão de Inventário de Recursos:
 - **Gestão de Inventário**: Administradores e gerentes podem gerenciar os seguintes recursos:
@@ -55,9 +55,12 @@ O **Sistema de Gerenciamento de Segurança** é uma aplicação desenvolvida par
 
 #### Passos para Instalação:
 
-1. Clone o repositório do backend:
+0. Clone o repositório do backend:
     ```bash
     git clone https://github.com/1DELAMARE/PWayneSeg.git
+    ```
+1. Execução do repositório do backend:
+    ```bash
     cd backend
     ```
 
@@ -68,7 +71,7 @@ O **Sistema de Gerenciamento de Segurança** é uma aplicação desenvolvida par
 
 3. Configure o banco de dados:
     - Crie o banco de dados `wayne_security` no MySQL.
-    - Execute o script SQL para criar as tabelas necessárias (disponível no arquivo `db_script.sql`).
+    - Execute o script SQL para criar as tabelas necessárias (disponível no arquivo `wayne_security.sql`).
 
 4. Configure as variáveis de ambiente:
     - Crie um arquivo `.env` na raiz do projeto e adicione a seguinte variável:
@@ -88,9 +91,8 @@ O **Sistema de Gerenciamento de Segurança** é uma aplicação desenvolvida par
 
 #### Passos para Instalação:
 
-1. Clone o repositório do frontend:
+1. Execução do frontend:
     ```bash
-    git clone https://github.com/1DELAMARE/PWayneSeg.git
     cd frontend
     ```
 
@@ -107,7 +109,7 @@ O **Sistema de Gerenciamento de Segurança** é uma aplicação desenvolvida par
     ```bash
     npm run dev
     ```
-    O frontend será servido em `http://localhost:3000`.
+    O frontend será servido em `http://localhost:3000`. ou na Porta de sua preferencia.
 
 ---
 
