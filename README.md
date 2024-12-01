@@ -103,10 +103,6 @@ O **Sistema de Gerenciamento de Segurança** é uma aplicação desenvolvida par
 
 3. Inicie o servidor de desenvolvimento:
     ```bash
-    npm start
-    ```
-    Ou, caso preferir:
-    ```bash
     npm run dev
     ```
     O frontend será servido em `http://localhost:3000`. ou na Porta de sua preferencia.
